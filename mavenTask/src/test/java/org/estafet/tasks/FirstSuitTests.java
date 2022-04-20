@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("First test suite with nested classes")
+@DisplayName("First test suite")
 class FirstSuitTests {
     @BeforeAll
     static void beforeAll(){
