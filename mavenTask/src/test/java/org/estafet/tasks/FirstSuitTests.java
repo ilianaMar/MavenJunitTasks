@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("First test suite")
-class FirstSuitTests {
+public class FirstSuitTests {
     @BeforeAll
     static void beforeAll(){
         System.out.println("Print once before all methods");
