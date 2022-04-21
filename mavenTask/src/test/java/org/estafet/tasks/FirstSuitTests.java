@@ -103,5 +103,21 @@ public class FirstSuitTests {
         void checkInputValuesAreNotEmpty(String  value){
             assertFalse(value.isEmpty() && value.isBlank());
         }
+
+        @DisplayName("Parameterized tests with double numbers")
+        @ParameterizedTest
+        @ValueSource(doubles ={1.0, 2.0, -1.2, -3.4})
+        void checkNumbersAreDouble(Double value){
+            assertEquals(value.getClass(), Double.class);
+        }
+
+        @DisplayName("Parameterized tests with integer numbers")
+        @ParameterizedTest
+        @ValueSource(ints ={1, 2, -1, -3})
+        void checkNumbersAreDouble(Integer value){
+            assertEquals(value.getClass(), Integer.class);
+        }
+
+
     }
 }
