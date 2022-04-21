@@ -16,12 +16,6 @@ public class AppTest
      * Rigorous Test :-)
      */
 
-    Faker faker;
-    @BeforeEach
-    void createNewFakerObject() {
-        faker = new Faker();
-    }
-
     @Test
     @DisplayName("First Test")
     public void shouldAnswerWithTrue()
