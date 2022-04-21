@@ -105,14 +105,14 @@ public class FirstSuitTests {
         }
 
         @DisplayName("Parameterized tests with double numbers")
-        @ParameterizedTest
+        @ParameterizedTest(name = "Test with double number {0}")
         @ValueSource(doubles ={1.0, 2.0, -1.2, -3.4})
         void checkNumbersAreDouble(Double value){
             assertEquals(value.getClass(), Double.class);
         }
 
         @DisplayName("Parameterized tests with integer numbers")
-        @ParameterizedTest
+        @ParameterizedTest(name = "Test with int number {0}")
         @ValueSource(ints ={1, 2, -1, -3})
         void checkNumbersAreDouble(Integer value){
             assertEquals(value.getClass(), Integer.class);
