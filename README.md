@@ -1,4 +1,4 @@
-# estafetTasks
+# Tasks
 
 ### This repository stores implementation of four tasks : Git Basics and Advanced, Maven and Junit5 Basics
 
